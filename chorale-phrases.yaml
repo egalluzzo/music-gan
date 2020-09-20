@@ -1,0 +1,1352 @@
+instruments:
+- name: Soprano
+  minPitch: 60 # C4
+  maxPitch: 81 # A5
+  program: 52  # Choir Aahs
+- name: Alto
+  minPitch: 54 # F#3 -- see 006606b_.mid (BWV 66.6); this note is in the manuscript
+  maxPitch: 77 # F5
+  program: 52
+- name: Tenor
+  minPitch: 48 # C3
+  maxPitch: 69 # A4
+  program: 52
+- name: Bass
+  minPitch: 36 # C2 -- see 009106b_.mid (BWV 91.6); this note is in the manuscript
+  maxPitch: 64 # E4 -- see 003006b_.mid (BWV 30.6); this note is in the manuscript
+  program: 52
+
+files:
+  000206b_.mid:
+    key: Gm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   Gm
+    - end:      9 3/4
+      endKey:   Gm
+    - end:      13 3/4
+      startKey: Dm
+      endKey:   Gm
+    - end:      17
+      endKey:   DM
+
+  000306b_.mid:
+    key: AM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   EM
+    - end:      9 3/4
+      endKey:   AM
+    # really all one theme...
+
+  000408b_.mid:
+    key: Em
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   Em
+    - end:      9 3/4
+      endKey:   Em
+    - start:    10
+      end:      13 3/4
+      endKey:   Bm
+    - end:      18
+      startKey: GM
+      endKey:   EM # Pickerty
+
+  000507b_.mid:
+    key: Gm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   DM
+    - end:      9 3/4
+      startKey: Gm
+      endKey:   BbM
+    - end:      13 3/4
+      endKey:   GM # Pickerty
+
+  000606b_.mid:
+    key: Gm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   DM
+    - end:      9 3/4
+      startKey: Gm
+      endKey:   GM # Pickerty
+
+  000707b_.mid:
+    key: Em
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   Em
+    - end:      9 3/4
+      endKey:   Em
+    - end:      13 3/4
+      endKey:   Bm
+    - end:      17 3/4
+      endKey:   Em
+    - end:      19 3/4
+      startKey: AM
+      endKey:   Bm
+
+  000907b_.mid:
+    key: EM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start: 1 3/4
+      end: 5 3/4
+      endKey: BM
+    - end: 9 3/4
+      startKey: EM
+      endKey: BM
+    - end: 15 3/4
+      endKey: EM
+
+  001007b_.mid:
+    key: Gm
+    time: 4/4
+    phrases:
+    - start:  1
+      end:    6
+      endKey: BbM
+    - end:    10
+      endKey: Gm
+    - end:    15
+      endKey: BbM
+    - end:    23
+      endKey: GM # Pickerty
+
+  001106b_.mid:
+    key: DM
+    time: 3/4
+    phrases:
+    - start:    1
+      end:      4 2/3
+      startKey: DM
+      endKey:   AM
+    - end:      9
+      startKey: DM
+      endKey:   DM
+    - end:      12 2/3
+      endKey:   AM
+    - end:      17
+      startKey: DM
+      endKey:   DM
+    - end:      21
+      startKey: AM
+      endKey:   Em
+    - end:      24 2/3
+      startKey: BM
+      endKey:   Bm
+    - end:      31 # could be split at 27 2/3
+      endKey:   DM
+
+  001306b_.mid:
+    key: BbM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      7 3/4
+      endKey:   FM
+    - end:      13 3/4
+      startKey: Gm
+      endKey:   BbM
+
+  001405b_.mid:
+    key: Gm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   BbM
+    - end:      9 3/4
+      startKey: Gm
+      endKey:   BbM
+    - end:      15 3/4
+      endKey:   GM # Pickerty
+
+  001606b_.mid:
+    key: Am
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   Am
+    - end:      9 3/4
+      endKey:   Am
+    - end:      11 3/4
+      endKey:   EM
+    - end:      17 3/4 # could be split in three
+      startKey: Am
+      endKey:   AM # Pickerty
+
+  001707b_.mid:
+    key: AM
+    time: 3/4
+    pickup: 1/4
+    phrases:
+    - start:    1 2/3
+      end:      5 2/3
+      endKey:   AM
+    - end:      9 2/3
+      endKey:   AM
+    - end:      13 2/3
+      endKey:   AM
+    - end:      17 2/3
+      endKey:   AM
+    - end:      21 2/3
+      endKey:   F#m
+    - end:      24 2/3
+      startKey: EM
+      endKey:   EM
+    - end:      28 2/3
+      startKey: F#m
+      endKey:   DM
+    - end:      31 2/3
+      startKey: AM
+      endKey:   BM
+    - end:      35 2/3
+      startKey: AM
+      endKey:   DM
+    - end:      38 2/3
+      startKey: AM
+      endKey:   EM
+    - end:      42 2/3
+      startKey: F#m
+      endKey:   EM
+    - end:      46 2/3
+      startKey: DM
+      endKey:   AM
+
+  001805blz.mid:
+    key: Dm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   AM
+    - end:      9 3/4
+      startKey: Dm
+      endKey:   AM
+    - end:      13 3/4
+      startKey: Am
+      endKey:   Dm
+    - end:      18 3/4
+      endKey:   AM
+
+  001805bw.mid: # same as 001805blz.mid but in Cm
+    key: Cm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   GM
+    - end:      9 3/4
+      startKey: Cm
+      endKey:   GM
+    - end:      13 3/4
+      startKey: Gm
+      endKey:   Cm
+    - end:      18 3/4
+      endKey:   GM
+
+  001907ch.mid:
+    key: CM
+    time: 3/4
+    phrases:
+    - start:    1
+      end:      6
+      endKey:   GM
+    - end:      10
+      startKey: CM
+      endKey:   CM
+    - end:      15
+      endKey:   GM
+    - end:      19
+      startKey: CM
+      endKey:   CM
+    - end:      23
+      startKey: CM
+      endKey:   CM
+    - end:      27 
+      endKey:   GM
+    - end:      32
+      startKey: CM
+      endKey:   FM
+    - end:      37
+      startKey: CM
+      endKey:   CM
+
+  002007b_.mid:
+    key: FM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   CM
+    - end:      9 3/4
+      startKey: Dm
+      endKey:   FM
+    - end:      13 3/4
+      endKey:   FM
+    - end:      17 3/4
+      endKey:   FM
+
+  002011b_.mid: # seems the same as 002007b_.mid
+    key: FM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   CM
+    - end:      9 3/4
+      startKey: Dm
+      endKey:   FM
+    - end:      13 3/4
+      endKey:   FM
+    - end:      17 3/4
+      endKey:   FM
+
+  002506b_.mid:
+    key: CM
+    time: 4/4
+    phrases:
+    - start:  1
+      end:    5
+      endKey: CM
+    - end:    9
+      endKey: CM
+    - end:    13
+      endKey: GM
+    - end:    18
+      endKey: CM
+
+  002606b_.mid:
+    key: Am
+    time: 4/4
+    phrases:
+    - start: 1
+      end: 5
+      endKey: AM
+    - end: 11
+      startKey: Dm
+      endKey: AM
+
+  002806b_.mid:
+    key: Am
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start: 1 3/4
+      end: 5 3/4
+      endKey: Am
+    - end: 9 3/4
+      endKey: Am
+    - end: 11 3/4
+      endKey: EM
+    - end: 17 3/4
+      startKey: Am
+      endKey: AM # Pickerty
+
+  002908ch.mid:
+    key: DM
+    time: 3/4
+    pickup: 1/4
+    phrases:
+    - start:    1 2/3
+      end:      5 2/3
+      endKey:   DM
+    - end:      9 2/3
+      endKey:   DM
+    - end:      13 2/3
+      endKey:   DM
+    - end:      17 2/3
+      endKey:   DM
+    - end:      21 2/3
+      endKey:   Bm
+    - end:      24 2/3
+      startKey: EM
+      endKey:   AM
+    - end:      28 2/3
+      startKey: DM
+      endKey:   GM
+    - end:      31 2/3
+      endKey:   Em
+    - end:      35 2/3
+      startKey: DM
+      endKey:   GM
+    - end:      38 2/3
+      startKey: DM
+      endKey:   AM
+    - end:      42 2/3
+      endKey:   AM
+    - end:      45 2/3
+      startKey: DM
+      endKey:   DM
+
+  003006b_.mid:
+    key: AM
+    time: 4/4
+    phrases:
+    - start:  1
+      end:    6  # can be split at 3 1/2
+      endKey: AM
+    - end:    11 # repeat of first phrase, can be split at 8 1/2
+      endKey: AM
+    - end:    15 # can be split at 13
+      endKey: EM
+    - end:    20 # can be split at 17 1/2
+      endKey: AM
+
+  003206b_.mid:
+    key: GM
+    time: 4/4
+    phrases:
+    - start:    1
+      end:      5
+      endKey:   GM
+    - end:      9 # repeat of first phrase
+      endKey:   GM
+    - end:      13 # can be split at 11
+      endKey:   DM
+    - end:      18 # can be split at 15
+      startKey: GM
+      endKey:   GM
+
+  003306b_.mid:
+    key: Am
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:  1 3/4
+      end:    4 3/4
+      endKey: CM
+    - end:    7 3/4
+      endKey: Am
+    - end:    10 3/4
+      endKey: CM
+    - end:    13 3/4
+      endKey: Am
+    - end:    17 3/4 # can be split at 15 3/4
+      endKey: Am
+    - end:    21 1/4 # can be split at 19 3/4
+      endKey: CM
+    - end:    23 3/4
+      endKey: AM
+
+  003604b2.mid: # contains 32nd notes
+    key: DM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   AM
+    - end:      9 3/4 # can be split at 7 3/4
+      startKey: DM
+      endKey:   AM
+    - end:      13 3/4 # can be split at 11 3/4
+      startKey: DM
+      endKey:   DM
+    - start:    14
+      end:      19 1/2 # can be split at 16 and maybe at 17 3/4
+      endKey:   DM
+    - end:      21 3/4
+      startKey: Bm
+      endKey:   DM
+
+  003608b2.mid:
+    key: Bm
+    time: 4/4
+    phrases:
+    - start:    1
+      end:      5 # can be split at 3
+      endKey:   GM
+    - end:      9 # can be split at 7
+      startKey: DM
+      endKey:   BM # Pickerty
+
+  003706b_.mid:
+    key: AM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   EM
+    - end:      9 3/4 # can be split at 7 3/4
+      startKey: AM
+      endKey:   EM
+    - end:      13 3/4 # can be split at 11 3/4
+      startKey: AM
+      endKey:   Bm
+    - end:      18 3/4 # can be split at 15 3/4
+      startKey: AM
+      endKey:   AM
+
+  003806b_.mid:
+    key: Am
+    time: 4/4
+    phrases:
+    - start:    1
+      end:      6 # can be split at 3 1/2
+      endKey:   EM
+    - end:      11 # can be split at 8 1/2, repeat of first phrase
+      startKey: Am
+      endKey:   EM
+    - end:      16 # can be split at 13 1/2
+      startKey: Am
+      endKey:   GM
+    - end:      19
+      startKey: CM
+      endKey:   EM
+
+  003907b_.mid:
+    key: BbM
+    time: 4/4
+    phrases:
+    - start:    1
+      end:      5
+      endKey:   BbM
+    - end:      9 # repeat of first phrase
+      endKey:   BbM
+    - end:      13 # can be split at 11
+      endKey:   FM
+    - end:      18 # can be split at 15 1/2
+      startKey: BbM
+      endKey:   BbM
+
+  004003b_.mid:
+    key: Gm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      7 3/4 # can be split at 3 3/4 and 4 3/4
+      endKey:   Gm
+    - start:    7 3/4
+      end:      12 3/4 # can be split at 8 3/4 and 9 3/4
+      startKey: BbM
+      endKey:   GM # Pickerty
+
+  004006b_.mid:
+    key: Dm
+    time: 4/4
+    phrases:
+    - start:    1
+      end:      5 # can be split at 3
+      endKey:   AM
+    - end:      9 # can be split at 7
+      startKey: Dm
+      endKey:   DM # really Gm but ending on a dominant
+    - end:      13 # can be split at 11
+      startKey: Dm
+      endKey:   BbM
+    - end:      17 # can be split at 15
+      startKey: FM
+      endKey:   DM # Pickerty
+
+  004008b_.mid:
+    key: Fm
+    time: 4/4
+    phrases:
+    - start:  1
+      end:    7 # can be split at 3, sort of, and definitely at 5
+      endKey: Fm
+    - end:    13 # can be split at 11
+      endKey: Fm
+    - end:    17 # can be split at 15
+      endKey: AbM
+    - end:    21
+      endKey: FM
+
+  004106bs.mid: # contains time signature changes and polyphony
+    key: CM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 1/2
+      endKey:   CM
+    - start:    5 3/4
+      end:      9 3/4
+      startKey: GM
+      endKey:   CM
+    - end:      13 1/2 # repeat of phrase ending at 5 1/2
+      endKey:   CM
+    - start:    13 3/4
+      end:      17 3/4 # repeat of phrase ending at 9 3/4
+      startKey: GM
+      endKey:   CM
+    - end:      21 3/4
+      startKey: GM
+      endKey:   CM
+    - end:      25 2/3 # time changes to 3/4 at bar 22
+      endKey:   CM
+    - end:      29 2/3
+      endKey:   Dm
+    - end:      33 2/3
+      startKey: Am
+      endKey:   CM
+    - end:      37 2/3
+      startKey: Dm
+      endKey:   DM
+    - end:      41 3/4 # time changes to 4/4 at bar 38
+      startKey: Am
+      endKey:   CM # has a chord in the bass
+
+  004207b_.mid:
+    key: F#m
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   AM
+    - end:      9 3/4 # can be split at 7 3/4
+      endKey:   F#m
+    - end:      16 3/4 # can be split at 11 3/4
+      startKey: AM
+      endKey:   AM
+    - end:      22
+      startKey: F#m
+      endKey:   AM
+    - end:      25 3/4
+      endKey:   DM
+    - end:      28 3/4
+      endKey:   F#M
+
+  004311b_.mid:
+    key: GM
+    time: 3/4
+    phrases:
+    - start:    1
+      end:      4 2/3
+      endKey:   DM
+    - end:      9 # really one long phrase from 1-9
+      startKey: GM
+      endKey:   GM
+    - end:      12 2/3 # repeat of phrase ending at 4 2/3
+      endKey:   DM
+    - end:      17 # repeat of phrase ending at 9
+      startKey: GM
+      endKey:   GM
+    - end:      21
+      startKey: DM
+      endKey:   Am # actually chord has no third
+    - end:      24 2/3
+      endKey:   Em
+    - end:      31
+      startKey: GM
+      endKey:   GM
+
+  004407b_.mid:
+    key: BbM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      7 3/4 # can be split at 3 3/4 and 5 3/4
+      endKey:   FM
+    - end:      13 3/4 # can be split at 9 3/4 and 11 3/4
+      startKey: Gm
+      endKey:   BbM
+
+  004507b_.mid: # contains rests
+    key: EM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      3 1/2
+      endKey:   AM
+    - start:    3 3/4
+      end:      7 1/2 # really all one phrase starting at 1 3/4
+      startKey: BM
+      endKey:   EM
+    - start:    7 3/4
+      end:      11 1/2
+      endKey:   AM
+    - start:    11 3/4
+      end:      13 1/2 # really all one phrase starting at 7 3/4
+      endKey:   BM
+    - start:    13 3/4
+      end:      15 1/2
+      startKey: EM
+      endKey:   C#m
+    - start:    15 3/4
+      end:      17 3/4 # really all one phrase starting at 13 3/4
+      startKey: EM
+      endKey:   EM
+
+  004606bs.mid: # contains rests
+    key: Gm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 1/2 # can be split at 3 1/2 - 3 3/4
+      endKey:   DM
+    - start:    5 3/4
+      end:      9 1/2 # can be split at 7 1/2 - 7 3/4
+      startKey: BbM
+      endKey:   BbM
+    - start:    9 3/4
+      end:      14 1/2 # can be split at 12 - 12 1/4
+      endKey:   CM
+    - start:    14 3/4
+      end:      19 3/4 # can be split at 17 - 17 1/4
+      startKey: Gm
+      endKey:   DM
+
+  004705b_.mid:
+    key: Gm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      7 1/2
+      startKey: Cm
+      endKey:   DM
+    - end:      11 3/4 # goes through some interesting harmonic contortions
+      startKey: Gm
+      endKey:   GM # Pickerty
+
+  004803b_.mid:
+    key: BbM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   FM
+    - end:      11 3/4 # odd harmonies and sub-phrases
+      startKey: BbM
+      endKey:   BbM
+
+  004807b_.mid:
+    key: Gm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   DM
+    - end:      9 3/4 # can be split at 7 3/4; repeat of first phrase
+      startKey: Gm
+      endKey:   DM
+    - end:      16 3/4 # can be split at 11 3/4
+      startKey: BbM
+      endKey:   GM # Pickerty
+
+  005505b_.mid:
+    key: BbM
+    time: 4/4
+    phrases:
+    - start:    1
+      end:      5 # can be split at 3
+      endKey:   BbM
+    - end:      9 # can be split at 7; repeat of first phrase
+      endKey:   BbM
+    - end:      13 # can be split at 11
+      startKey: Cm
+      endKey:   EbM
+    - end:      17 # can be split at 15; mostly a repeat of phrase ending at 5
+      startKey: BbM
+      endKey:   BbM
+
+  005605b_.mid: # contains rests
+    key: Cm
+    time: 4/4
+    phrases:
+    - start:    1 # starts with a quarter note rest
+      end:      4
+      endKey:   GM
+    - end:      7
+      startKey: AbM
+      endKey:   Cm
+    - end:      10 # repeat of phrase ending at 4
+      endKey:   GM
+    - end:      13 # repeat of phrase ending at 7
+      startKey: AbM
+      endKey:   Cm
+    - end:      16
+      endKey:   EbM
+    - end:      19 # repeat of phrase ending at 16
+      startKey: Cm
+      endKey:   EbM
+    - end:      23 # can be split at 21
+      endKey:   CM # Pickerty
+
+  005708b.mid: # contains rests
+    key: BbM
+    time: 3/4
+    phrases:
+    - start:    1
+      end:      6
+      endKey:   BbM
+    - end:      11 # repeat of previous phrase
+      endKey:   BbM
+    - end:      13
+      endKey:   EbM
+    - end:      16
+      startKey: BbM
+      endKey:   FM
+    - end:      19 # really one big phrase starting at 11
+      startKey: BbM
+      endKey:   BbM
+
+  006005b_.mid: # some odd harmonies and phrases, includes rests
+    key: AM
+    time: 4/4
+    phrases:
+    - start:    1
+      end:      6 1/2 # can be split at 2 3/4 and 4 3/4
+      endKey:   EM
+    - end:      12 # can be split at 8 1/4 and 10 1/4
+      startKey: AM
+      endKey:   EM
+    - end:      15
+      endKey:   EM
+    - end:      18
+      endKey:   EM
+    - end:      21 # can be split at 19 1/2
+      startKey: AM
+      endKey:   AM
+
+  006402b_.mid:
+    key: GM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start: 1 3/4
+      end:   5 3/4 # can be split at 4
+      endKey: GM
+    - end:    7 3/4
+      endKey: DM
+    - end:    12
+      endKey: GM
+
+  006408b_.mid:
+    key: Em
+    time: 4/4
+    phrases:
+    - start:  1
+      end:    7 # can be split at 3 and 5
+      endKey: Em
+    - end:    13 # repeat of phrase ending at 7, can be split at 9 and 11
+      endKey: Em
+    - end:    17 1/2 # can be split at 15
+      endKey: BM
+    - end:    20 # really 13-20 is one long phrase
+      endKey: EM # Pickerty
+
+  006502b_.mid:
+    key: Am
+    time: 3/4
+    pickup: 1/4
+    phrases:
+    - start:  1 2/3
+      end:    6 # could maybe be split at 3 2/3
+      endKey: CM
+    - end:    8 2/3
+      endKey: CM
+    - end:    12 2/3
+      endKey: Am
+    - end:    18
+      endKey: AM # Pickerty
+
+  006507b_.mid:
+    key: Am
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      6 3/4 # could be split at 3 3/4
+      endKey:   Am
+    - end:      11 3/4 # repeat of phrase ending at 6 3/4, could be split at 8 3/4
+      endKey:   Am
+    - end:      16 1/4 # could be split at 14 1/4
+      endKey:   EM
+    - end:      20 3/4 # could be split at 18 1/4
+      startKey: Em
+      endKey:   AM # Pickerty
+
+  006606b_.mid:
+    key: AM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      4 3/4 # could be split at 3 3/4
+      endKey:   F#m
+    - end:      9 # could be split at 6 3/4
+      endKey:   C#M
+    - end:      11
+      startKey: F#M
+      endKey:   F#M
+
+  006704b_.mid:
+    key: BM
+    time: 3/4
+    pickup: 1/4
+    phrases:
+    - start: 1 2/3
+      end: 5 2/3
+      endKey: BM
+    - end: 9 2/3
+      endKey: C#M
+    - end: 13 2/3
+      startKey: EM
+      endKey: EM
+    - end: 20 # can be split at 17 2/3
+      startKey: AM
+      endKey: F#M
+
+  006707b_.mid:
+    key: AM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4
+      endKey:   AM
+    - end:      9 3/4 # repeat of phrase ending at 5 3/4
+      endKey:   AM
+    - end:      14 3/4
+      startKey: EM
+      endKey:   AM
+
+  006906ba.mid:
+    key: GM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   GM
+    - end:      9 3/4 # repeat of phrase ending at 5 3/4, can be split at 7 3/4
+      endKey:   GM
+    - end:      13 3/4
+      endKey:   DM
+    - end:      15 3/4
+      startKey: GM
+      endKey:   GM
+
+  007007b_.mid:
+    key: GM
+    time: 3/4
+    phrases:
+    - start:    1
+      end:      5
+      endKey:   DM
+    - end:      9 # really one long phrase from 1 to 9
+      startKey: Em
+      endKey:   GM
+    - end:      13 # repeat of phrase ending at 5
+      endKey:   DM
+    - end:      17 # repeat of phrase ending at 9; really one long phrase from 9 to 17
+      startKey: Em
+      endKey:   GM
+    - end:      21
+      endKey:   GM
+    - end:      25
+      endKey:   DM
+    - end:      30
+      startKey: GM
+      endKey:   Em
+    - end:      35
+      startKey: GM
+      endKey:   GM
+
+  007011ch.mid:
+    key: CM
+    time: 4/4
+    phrases:
+    - start:    1
+      end:      5 1/2 # can be split at 3
+      endKey:   GM
+    - end:      10 # can be split at 7 1/2
+      startKey: CM
+      endKey:   CM
+    - end:      14 # can be split at 12
+      endKey:   CM
+
+  007206b_.mid:
+    key: Am
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      6 3/4 # can be split at 3 3/4
+      endKey:   Am
+    - end:      11 3/4 # repeat of phrase ending at 6 3/4, can be split at 8 3/4
+      endKey:   Am
+    - end:      15 3/4 # can be split at 13 3/4
+      endKey:   EM
+    - end:      20 3/4 # can be split at 17 3/4
+      startKey: Am
+      endKey:   AM # Pickerty
+
+  007305b_.mid:
+    key: Cm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:  1 3/4
+      end:    5 3/4
+      endKey: Cm
+    - end:    9 3/4 # repeat of phrase ending at 5 3/4
+      endKey: Cm
+    - end:    11 3/4
+      endKey: EbM
+    - end:    17 3/4
+      endKey: CM # Pickerty
+
+  007408b_.mid:
+    key: Am
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   EM
+    - end:      9 3/4 # can be split at 7 3/4
+      startKey: Am
+      endKey:   EM
+    - end:      15
+      startKey: Am
+      endKey:   AM # Pickerty
+
+  007706b_.mid: # contains rests
+    key: Gm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:  1 3/4
+      end:    6 3/4 # can be split at 4 1/4
+      endKey: Gm
+    - end:    11 3/4 # repeat of phrase ending at 6 3/4, can be split at 9 1/4
+      endKey: Gm
+    - end:    16 3/4 # can be split at 14 1/4
+      endKey: Gm
+    - end:    18 3/4
+      endKey: DM
+
+  007807b_.mid:
+    key: Gm
+    time: 4/4
+    phrases:
+    - start:    1
+      end:      5 # can maybe be split at 3
+      endKey:   DM
+    - end:      9 # almost a repeat of phrase ending at 5, can maybe be split at 7
+      startKey: Gm
+      endKey:   DM
+    - end:      13 # can maybe be split at 11
+      endKey:   BbM
+    - end:      17 # can be split at 15
+      endKey:   GM # Pickerty
+
+  007903bs.mid:
+    key: GM
+    time: 2/2
+    phrases:
+    - start:    1
+      end:      9
+      endKey:   GM
+    - end:      17
+      endKey:   GM
+    - end:      24
+      startKey: DM
+      endKey:   DM
+    - end:      31
+      startKey: GM
+      endKey:   GM
+
+  008008b_.mid: # A Mighty Fortress Is Our God
+    key: DM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   DM
+    - end:      9 3/4 # repeat of phrase ending at 5 3/4, can be split at 7 3/4
+      endKey:   DM
+    - end:      14 1/4 # could be split at 11 1/2
+      endKey:   AM
+    - end:      18 # could be split at 15 3/4
+      startKey: Em
+      endKey:   DM
+
+  008107b_.mid:
+    key: Em
+    time: 4/4
+    phrases:
+    - start: 1
+      end: 7 # can be split at 3 and 5
+      endKey: Em
+    - end: 13 # repeat of phrase ending at 7; can be split at 9 and 11
+      endKey: Em
+    - end: 17 1/2 # can be split at 15
+      endKey: BM
+    - end: 20 # 13-20 is really one long phrase
+      endKey: EM # Pickerty
+
+  008305b_.mid:
+    key: Dm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # could be split at 3 3/4
+      endKey:   AM
+    - end:      10 # could be split at 8 1/2
+      startKey: CM
+      endKey:   FM
+    - end:      13 3/4
+      startKey: Dm
+      endKey:   DM # Pickerty
+
+  008405b_.mid: # contains rests
+    key: Bm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:  1 3/4
+      end:    6 3/4 # can be split at 4 3/4
+      endKey: Bm
+    - end:    11 3/4 # repeat of phrase ending at 6 3/4, can be split at 9 3/4
+      endKey: Bm
+    - end:    15 3/4 # can be split at 13 3/4
+      endKey: BM # Pickerty
+
+  008506b_.mid:
+    key: Cm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # could be split at 3 3/4
+      endKey:   GM
+    - end:      7 3/4 # really 1 3/4 - 7 3/4 is one long phrase
+      startKey: Cm
+      endKey:   EbM
+    - end:      11 3/4 # can be split at 9 3/4
+      endKey:   GM
+    - end:      15 3/4
+      startKey: Cm
+      endKey:   CM # Pickerty
+
+  008606b_.mid:
+    key: EM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   BM
+    - end:      9 3/4 # repeat of phrase ending at 5 3/4
+      startKey: EM
+      endKey:   BM
+    - end:      13 3/4 # can be split at 11 3/4
+      startKey: EM
+      endKey:   C#M
+    - end:      16 # really 9 3/4-16 is one long phrase
+      startKey: EM
+      endKey:   EM
+
+  008707b_.mid:
+    key: Dm
+    time: 4/4
+    phrases:
+    - start:    1
+      end:      7 # can be split at 3 and 5
+      endKey:   Dm
+    - end:      13 # repeat of phrase ending at 7, can be split at 9 and 11
+      endKey:   Dm
+    - end:      17 1/2
+      endKey:   AM
+    - end:      20 # really 13-20 is one long phrase
+      startKey: Dm
+      endKey:   DM # Pickerty
+
+  008807b_.mid:
+    key: Bm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start: 1 3/4
+      end: 6 3/4 # can be split at 4 1/4
+      endKey: Bm
+    - end: 11 3/4 # almost a repeat of phrase ending at 6 3/4, can be split at 9 1/4
+      endKey: Bm
+    - end: 15 3/4 # can be split at 13 3/4
+      endKey: BM # Pickerty
+
+  008906b_.mid:
+    key: Gm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   DM
+    - end:      9 3/4 # can be split at 7 3/4
+      startKey: Gm
+      endKey:   BbM
+    - end:      13 3/4 # can be split at 11 3/4
+      endKey:   GM # Pickerty
+
+  009005b_.mid:
+    key: Dm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   AM
+    - end:      9 3/4 # can be split at 7 3/4
+      startKey: FM
+      endKey:   AM
+    - end:      13 3/4 # can be split at 11 3/4, some very odd harmonies...
+      startKey: Am
+      endKey:   DM
+
+  009106ch.mid:
+    key: GM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 4
+      endKey:   GM
+    - end:      10 1/2 # can be split at 7 3/4
+      endKey:   DM
+    - end:      12 # 5 3/4-12 is really one long phrase
+      startKey: GM
+      endKey:   GM
+
+  009209b_.mid:
+    key: Bm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      6 3/4 # can be split at 3 3/4
+      endKey:   Bm
+    - end:      11 3/4 # repeat of phrase ending at 6 3/4, can be split at 8 3/4
+      endKey:   Bm
+    - end:      15 3/4 # can be split at 13 3/4
+      startKey: EM
+      endKey:   F#M
+    - end:      20 3/4 # almost a repeat of phrase ending at 6 3/4, can be split at 17 3/4
+      startKey: Bm
+      endKey:   BM
+
+  009307b_.mid: # contains rests
+    key: Cm
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:  1 3/4
+      end:    6 3/4 # can be split at 4 1/4
+      endKey: Cm
+    - end:    11 3/4 # repeat of phrase ending at 6 3/4, can be split at 9 1/4
+      endKey: Cm
+    - end:    16 3/4 # can be split at 14 1/4
+      endKey: CM # Pickerty
+
+  009408b_.mid:
+    key: DM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   DM
+    - end:      9 3/4 # can be split at 7 3/4
+      endKey:   AM
+    - end:      13 3/4 # can be split at 11 3/4
+      startKey: DM
+      endKey:   AM
+    - end:      17 3/4 # can be split at 15 3/4
+      startKey: DM
+      endKey:   DM
+
+  009606b_.mid:
+    key: FM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   FM
+    - end:      9 3/4 # repeat of phrase ending at 5 3/4, can be split at 7 3/4
+      endKey:   FM
+    - end:      11 3/4
+      endKey:   CM
+    - end:      15 3/4 # can be split at 13 3/4; really 9 3/4-15 3/4 is one long phrase
+      startKey: FM
+      endKey:   FM
+
+  009709ch.mid:
+    key: BbM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   FM
+    - end:      7 3/4 # really 1 3/4-7 3/4 is one long phrase
+      startKey: BbM
+      endKey:   FM
+    - end:      11 3/4 # can split at 9 3/4; reharmonization of phrase ending at 5 3/4
+      startKey: BbM
+      endKey:   FM
+    - end:      14 # really 7 3/4-14 is one long phrase
+      startKey: Dm
+      endKey:   FM
+  
+  009906b_.mid:
+    key: GM
+    time: 4/4
+    pickup: 1/4
+    phrases:
+    - start:    1 3/4
+      end:      5 3/4 # can be split at 3 3/4
+      endKey:   GM
+    - end:      9 3/4 # repeat of phrase ending at 5 3/4; can be split at 7 3/4
+      endKey:   GM
+    - end:      13 3/4 # can be split at 11 3/4
+      endKey:   DM
+    - end:      15 3/4 # 9 3/4 - 15 3/4 are maybe one long phrase
+      startKey: Bm
+      endKey:   GM
+  
