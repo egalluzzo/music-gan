@@ -13,6 +13,20 @@ DEFAULT_QUARTERS_PER_MINUTE = 120
 DEFAULT_TIME_SIGNATURE_FRACTION = Fraction('4/4')
 
 NOTE_NAMES = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"]
+MODE_NAMES = ['M', 'm']
+KEY_NAMES = [
+  "CM", "DbM", "DM", "EbM", "EM", "FM", "GbM", "GM", "AbM", "AM", "BbM", "BM", # Major keys (mode = 0)
+  "Cm", "C#m", "Dm", "Ebm", "Em", "Fm", "F#m", "Gm", "G#m", "Am", "Bbm", "Bm"  # Minor keys (mode = 1)
+]
+
+MODE_INDICES = {
+  "M": 0,
+  "Maj": 0,
+  "maj": 0,
+  "m": 1,
+  "min": 1,
+  "Min": 1
+}
 
 NOTE_INDICES = {
   "Cb": 11,
@@ -38,50 +52,6 @@ NOTE_INDICES = {
   "B#": 0
 }
 
-NORMALIZED_KEY_SIGNATURES = {
-  "CbM": "BM",
-  "Cbm": "Bm",
-  "CM": "CM",
-  "Cm": "Cm",
-  "C#M": "DbM",
-  "C#m": "C#m",
-  "DbM": "DbM",
-  "Dbm": "C#m",
-  "DM": "DM",
-  "Dm": "Dm",
-  "D#M": "EbM",
-  "D#m": "Ebm",
-  "EbM": "EbM",
-  "Ebm": "Ebm",
-  "EM": "EM",
-  "Em": "Em",
-  "E#M": "FM",
-  "E#m": "Fm",
-  "FbM": "EM",
-  "Fbm": "Em",
-  "FM": "FM",
-  "Fm": "Fm",
-  "F#M": "GbM",
-  "F#m": "F#m",
-  "GbM": "GbM",
-  "Gbm": "F#m",
-  "GM": "GM",
-  "Gm": "Gm",
-  "G#M": "AbM",
-  "G#m": "G#m",
-  "AbM": "AbM",
-  "Abm": "G#m",
-  "AM": "AM",
-  "Am": "Am",
-  "A#M": "BbM",
-  "A#m": "Bbm",
-  "BbM": "BbM",
-  "Bbm": "Bbm",
-  "BM": "BM",
-  "Bm": "Bm",
-  "B#M": "CM",
-  "B#m": "Cm"
-}
 
 class NoTimeSignaturesError(Exception):
   """Exception indicating that a NoteSequence has no time signatures.
@@ -152,33 +122,24 @@ class Key:
           "Could not parse key signature %s, must be of the form C or F#m or EbM" % key_name)
 
     tonic = key_match.group(1)
-    mode = key_match.group(2)
+    mode_name = key_match.group(2)
 
-    if not mode:
-      mode = 'M'
-    elif mode == 'M' or mode == 'm':
-      pass
-    elif mode == 'maj' or mode == 'Maj':
-      mode = 'M'
-    elif mode == 'min' or mode == 'Min':
-      mode = 'm'
+    if not mode_name:
+      mode = 0
     else:
-      raise InvalidKeySignatureNameError(
-          "Unknown mode %s, must be M, m, maj or min" % mode)
+      if mode_name not in MODE_INDICES:
+        raise InvalidKeySignatureNameError(
+            "Unknown mode %s, must be M, m, maj or min" % mode_name)
+      mode = MODE_INDICES[mode_name]
     
     if tonic not in NOTE_INDICES:
       raise InvalidKeySignatureNameError(
           "Unknown tonic %s, must be a standard note name like A or Bb or C#" % tonic)
-    tonic = NOTE_NAMES[(NOTE_INDICES[tonic] + transposition) % 12]
-
-    new_key_name = NORMALIZED_KEY_SIGNATURES[tonic + mode]
-
-    # This time the key signature should certainly match, since it came from
-    # our master list.
-    self.key_name = new_key_name
-    key_match = re.match(r"^([A-Ga-g][b#]?)(M|m|maj|min)?$", new_key_name)
-    self.tonic = NOTE_INDICES[key_match.group(1)]
-    self.mode = key_match.group(2)
+    
+    self.tonic = (NOTE_INDICES[tonic] + transposition) % 12
+    self.mode = mode
+    self.key_index = self.mode * 12 + self.tonic
+    self.key_name = KEY_NAMES[self.key_index]
 
 
 class Phrase:

@@ -1,4 +1,5 @@
 from phrase_gan_model import PhraseDenseGanModel, PhraseConv1DGanModel, PhraseConv2DGanModel
+from phrase_cgan_model import PhraseCganModel
 import os, sys, yaml
 import phrases_lib
 
@@ -36,7 +37,24 @@ phrases = phrases_lib.read_midi_files(midi_dir=midi_dir,
 print("Read %d phrases" % len(phrases))
 
 # PhraseConv1DGanModel
-model = PhraseConv1DGanModel(MAX_STEPS, instrument_count=4, learning_rate=1e-4)
+# model = PhraseConv1DGanModel(MAX_STEPS, instrument_count=4, learning_rate=1e-4)
+# test = model.predictions_to_phrase(model.phrase_to_predictions(phrases[0]))
+# test.write_to_midi_file('./test.midi', instruments_data=instruments_data, qpm=80)
+# model.train(phrases=phrases,
+#             instruments_data=instruments_data,
+#             batch_size=BATCH_SIZE,
+#             epochs=EPOCHS,
+#             checkpoints_every=250,
+#             generate_every=100)
+# model.train(phrases=phrases,
+#             instruments_data=instruments_data,
+#             batch_size=50,
+#             epochs=10000,
+#             checkpoints_every=250,
+#             generate_every=100)
+
+# PhraseCganModel
+model = PhraseCganModel(MAX_STEPS, instrument_count=4, learning_rate=5e-4)
 test = model.predictions_to_phrase(model.phrase_to_predictions(phrases[0]))
 test.write_to_midi_file('./test.midi', instruments_data=instruments_data, qpm=80)
 # model.train(phrases=phrases,
@@ -48,7 +66,7 @@ test.write_to_midi_file('./test.midi', instruments_data=instruments_data, qpm=80
 model.train(phrases=phrases,
             instruments_data=instruments_data,
             batch_size=50,
-            epochs=10000,
+            epochs=5000,
             checkpoints_every=250,
             generate_every=100)
 
